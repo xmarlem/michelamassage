@@ -4,6 +4,7 @@ PORT ?= 8000
 HOST ?= 127.0.0.1
 PYTHON ?= python3
 NETLIFY_SITE_ID ?= ae891950-b3cc-4a6f-baa4-f483277b32f5
+NETLIFY_SITE_NAME ?= michelamassage
 NETLIFY_DEPLOY_DIR ?= .
 SITE_URL := http://$(HOST):$(PORT)
 NETLIFY_URL := https://michelamassage.netlify.app
@@ -20,7 +21,7 @@ help: ## Mostra i target disponibili
 	@awk 'BEGIN {FS = ":.*##"; printf "\nTarget disponibili:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  %-14s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 	@printf "\nVariabili utili:\n"
 	@printf "  PORT=%s HOST=%s\n" "$(PORT)" "$(HOST)"
-	@printf "  NETLIFY_SITE_ID=%s NETLIFY_DEPLOY_DIR=%s\n" "$(NETLIFY_SITE_ID)" "$(NETLIFY_DEPLOY_DIR)"
+	@printf "  NETLIFY_SITE_NAME=%s NETLIFY_SITE_ID=%s NETLIFY_DEPLOY_DIR=%s\n" "$(NETLIFY_SITE_NAME)" "$(NETLIFY_SITE_ID)" "$(NETLIFY_DEPLOY_DIR)"
 	@printf "\nEsempi:\n"
 	@printf "  make serve\n"
 	@printf "  make serve PORT=8080\n"
@@ -87,18 +88,18 @@ netlify-status: ## Mostra informazioni del sito Netlify collegato
 
 deploy: check ## Deploy preview su Netlify tramite CLI
 	@if command -v netlify >/dev/null 2>&1; then \
-		netlify deploy --dir "$(NETLIFY_DEPLOY_DIR)" --site "$(NETLIFY_SITE_ID)"; \
+		netlify deploy --no-build --dir "$(NETLIFY_DEPLOY_DIR)" --site "$(NETLIFY_SITE_NAME)"; \
 	elif command -v npx >/dev/null 2>&1; then \
-		npx netlify deploy --dir "$(NETLIFY_DEPLOY_DIR)" --site "$(NETLIFY_SITE_ID)"; \
+		npx netlify deploy --no-build --dir "$(NETLIFY_DEPLOY_DIR)" --site "$(NETLIFY_SITE_NAME)"; \
 	else \
 		printf "Netlify CLI non trovato. Installa con: npm install -g netlify-cli\n"; exit 1; \
 	fi
 
 deploy-prod: check ## Deploy produzione su Netlify tramite CLI
 	@if command -v netlify >/dev/null 2>&1; then \
-		netlify deploy --prod --dir "$(NETLIFY_DEPLOY_DIR)" --site "$(NETLIFY_SITE_ID)"; \
+		netlify deploy --prod --no-build --dir "$(NETLIFY_DEPLOY_DIR)" --site "$(NETLIFY_SITE_NAME)"; \
 	elif command -v npx >/dev/null 2>&1; then \
-		npx netlify deploy --prod --dir "$(NETLIFY_DEPLOY_DIR)" --site "$(NETLIFY_SITE_ID)"; \
+		npx netlify deploy --prod --no-build --dir "$(NETLIFY_DEPLOY_DIR)" --site "$(NETLIFY_SITE_NAME)"; \
 	else \
 		printf "Netlify CLI non trovato. Installa con: npm install -g netlify-cli\n"; exit 1; \
 	fi

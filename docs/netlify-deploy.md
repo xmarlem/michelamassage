@@ -47,6 +47,7 @@ Dettagli progetto:
 | Admin URL | `https://app.netlify.com/projects/michelamassage` |
 | Site URL | `https://michelamassage.netlify.app` |
 | Project ID | `ae891950-b3cc-4a6f-baa4-f483277b32f5` |
+| CLI deploy target | `michelamassage` |
 | Deploy mode | Manuale, senza Git remote |
 
 Durante l'inizializzazione Netlify ha chiesto:
@@ -80,7 +81,7 @@ make deploy
 Il target esegue internamente:
 
 ```bash
-netlify deploy --dir . --site ae891950-b3cc-4a6f-baa4-f483277b32f5
+netlify deploy --no-build --dir . --site michelamassage
 ```
 
 oppure direttamente:
@@ -98,7 +99,7 @@ make deploy-prod
 Il target esegue internamente:
 
 ```bash
-netlify deploy --prod --dir . --site ae891950-b3cc-4a6f-baa4-f483277b32f5
+netlify deploy --prod --no-build --dir . --site michelamassage
 ```
 
 oppure direttamente:
@@ -168,6 +169,8 @@ make clean          # rimuove cache temporanee
 ```
 
 I target `lint-html` e `lint-css` usano `htmlhint`/`stylelint` se installati. Se non sono disponibili, usano i controlli Python in `scripts/check_site.py`, così il workflow funziona anche senza installare dipendenze Node.
+
+I target `deploy` e `deploy-prod` usano il nome progetto `michelamassage` come valore `--site`, perché con Netlify CLI 26 il deploy autenticato funziona in modo affidabile con il nome progetto in questo ambiente. Il Project ID rimane documentato per identificare il sito nella dashboard/API, ma non è il valore usato dal Makefile per il deploy.
 
 Usare `make final-check` prima di chiudere una sessione o un task che ha modificato codice, contenuti, configurazione, accessibilità, SEO, deploy o documentazione. Il target esegue i controlli tecnici e verifica che la documentazione/checklist di progetto sia presente e aggiornata.
 

@@ -189,7 +189,6 @@ section{padding:6rem 2rem}
 footer{background:var(--navy-mid);border-top:1px solid rgba(201,168,76,0.1);padding:3rem 2rem;text-align:center}
 footer img{height:80px;width:auto;filter:drop-shadow(0 0 16px rgba(201,168,76,0.4));margin-bottom:0.8rem}
 .ft-tag{font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.3em;color:var(--muted)}
-.ft-test-banner{display:inline-block;margin-top:0.9rem;padding:0.45rem 0.75rem;border:1px solid rgba(201,168,76,0.55);border-radius:999px;color:var(--gold);font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;background:rgba(201,168,76,0.08)}
 .ft-div{width:80px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:1.5rem auto}
 .ft-copy{font-size:0.75rem;color:rgba(143,163,184,0.5)}
 .ft-copy a{color:rgba(143,163,184,0.4);text-decoration:none}
