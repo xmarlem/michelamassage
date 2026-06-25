@@ -47,6 +47,7 @@ Landing page bilingue italiano/tedesco per Michela Massage, attività di massagg
 - `maintenance.md` — come modificare testi, prezzi, lingua, immagini e contatti.
 - `accessibility-seo-review.md` — analisi SEO/accessibilità/performance con rischi e miglioramenti.
 - `netlify-deploy.md` — istruzioni e checklist per deploy Netlify.
+- `netlify-snapshot-compare.md` — procedura per mantenere online uno snapshot precedente e confrontarlo visivamente dopo il deploy.
 - `development-workflow.excalidraw` — diagramma editabile del workflow di sviluppo Hermes/AI.
 - `session-log.md` — riepilogo conciso dell'ultima sessione di lavoro.
 - `current-task.md` — prossimo passo operativo consigliato.
