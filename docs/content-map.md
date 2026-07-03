@@ -18,6 +18,7 @@ Il cambio lingua avviene lato client con `setLang('it')` / `setLang('de')`.
 | Über mich | Chi sono | `#about` |
 | Behandlungen | Servizi | `#servizi` |
 | Preise | Prezzi | `#prezzi` |
+| FAQ | FAQ | `#faq` |
 | Kontakt | Contatti | `#contatti` |
 
 ## Hero
@@ -95,6 +96,21 @@ Il QR code punta a una bozza email `mailto:`:
 
 - `QR_DE`: subject `Terminanfrage Michela Massage`;
 - `QR_IT`: subject `Prenotazione Michela Massage`.
+
+## FAQ
+
+La sezione `#faq` è posizionata alla fine del contenuto principale, dopo i contatti. Usa elementi nativi `<details>` / `<summary>` per mantenere la sezione accessibile e consultabile senza JavaScript.
+
+Temi coperti:
+
+- scelta del trattamento più adatto;
+- rimborso da assicurazione complementare ASCA/EMR;
+- modalità di prenotazione;
+- disponibilità del martedì;
+- primo appuntamento;
+- massaggio prenatale;
+- preparazione al trattamento;
+- spostamento o cancellazione appuntamento.
 
 ## Footer
 
