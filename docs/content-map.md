@@ -64,15 +64,23 @@ Nota: il servizio `RESET` è indicato come solo per nuovi clienti.
 
 ## Prezzi
 
-La sezione prezzi contiene una tabella separata dalle card servizio. Card, tabella prezzi e option del form sono allineate per massaggio classico, linfodrenaggio, testa/collo, massaggio prenatale e RESET.
+La sezione prezzi contiene una tabella separata dalle card servizio e un pannello dedicato a pacchetti/abbonamenti. Card, tabella prezzi e option del form sono allineate per massaggio classico, linfodrenaggio, testa/collo, massaggio prenatale e RESET.
 
-Pacchetti gravidanza indicati nella nota prezzi:
+Pacchetti gravidanza indicati nel pannello pacchetti:
 
 | Pacchetto | Durata | Prezzo | Validità |
 | --- | --- | --- | --- |
 | Relax | 3 × 60 min | CHF 345 | 3 mesi |
 | Balance | 5 × 60 min | CHF 575 | 6 mesi |
 | Deep Relax | 3 × 90 min | CHF 460 | 4 mesi |
+
+Abbonamenti da 10 sedute indicati nel pannello pacchetti e nel form contatto:
+
+| Abbonamento | Prezzo | Nota |
+| --- | --- | --- |
+| 10 × 30 min | CHF 595 | 15% di sconto, invece di CHF 700 |
+| 10 × 60 min | CHF 1105 | 15% di sconto, invece di CHF 1300 |
+| 10 × 90 min | CHF 1445 | 15% di sconto, invece di CHF 1700 |
 
 ## Info pratiche
 

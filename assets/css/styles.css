@@ -135,6 +135,21 @@ section{padding:6rem 2rem}
 .pt-svc::before{content:'✓';color:var(--gold);font-size:0.8rem}
 .pt-price{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-light);text-align:center;display:flex;align-items:center;justify-content:center}
 .pt-price.na{color:var(--muted);font-size:0.8rem}
+.package-panel{margin-top:1.5rem;padding:1.6rem;border:1px solid rgba(201,168,76,0.16);background:linear-gradient(135deg,rgba(201,168,76,0.08),rgba(13,27,42,0.45))}
+.package-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;margin-bottom:1.4rem}
+.package-head h3{font-family:'Cinzel',serif;font-size:0.95rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.5rem}
+.package-head p,.package-card p{font-family:'Cormorant Garamond',serif;font-size:1.02rem;line-height:1.7;color:#c8d8e8}
+.package-badge{flex:0 0 auto;border:1px solid rgba(201,168,76,0.36);padding:0.6rem 0.85rem;font-family:'Cinzel',serif;font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(13,27,42,0.45)}
+.package-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.package-card{padding:1.35rem;border:1px solid rgba(201,168,76,0.14);background:rgba(13,27,42,0.42)}
+.package-card-featured{background:linear-gradient(160deg,rgba(201,168,76,0.1),rgba(13,27,42,0.48))}
+.package-kicker{font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.55rem}
+.package-card h4{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:400;color:var(--cream);margin-bottom:0.5rem}
+.package-items{display:grid;gap:0.65rem;margin-top:1.1rem}
+.package-item{display:grid;grid-template-columns:1fr auto;gap:0.2rem 1rem;padding:0.75rem 0;border-top:1px solid rgba(201,168,76,0.12)}
+.package-item span{font-family:'Cinzel',serif;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)}
+.package-item strong{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--gold-light);text-align:right}
+.package-item small{grid-column:1 / -1;font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:var(--muted);font-style:italic}
 .price-note{margin-top:1.5rem;padding:1.2rem 2rem;border:1px solid rgba(201,168,76,0.15);border-left:3px solid var(--gold);font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--muted);font-style:italic;line-height:1.8}
 .price-note strong{color:var(--gold-light);font-style:normal}
 
@@ -226,6 +241,11 @@ footer img{height:80px;width:auto;filter:drop-shadow(0 0 16px rgba(201,168,76,0.
   .lang-switcher{right:1.5rem}
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
   .services-grid{grid-template-columns:1fr}
+  .package-head{display:block}
+  .package-badge{display:inline-block;margin-top:1rem}
+  .package-grid{grid-template-columns:1fr}
+  .package-item{grid-template-columns:1fr}
+  .package-item strong{text-align:left}
   .faq-cta{display:block}
   .faq-link{display:inline-block;margin-top:1rem}
   .info-inner{grid-template-columns:1fr;gap:2.5rem}

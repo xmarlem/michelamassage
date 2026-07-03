@@ -176,7 +176,7 @@ Usare `make final-check` prima di chiudere una sessione o un task che ha modific
 
 ## Checklist prima di andare online
 
-- [ ] Verificare che i prezzi del massaggio prenatale e dei pacchetti gravidanza siano ancora corretti.
+- [ ] Verificare che i prezzi del massaggio prenatale, dei pacchetti gravidanza e degli abbonamenti da 10 sedute siano ancora corretti.
 - [ ] Verificare che il numero telefono e l'email siano definitivi.
 - [ ] Testare il form su mobile: deve aprire l'app email.
 - [ ] Testare il QR code in tedesco, italiano e inglese.

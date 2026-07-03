@@ -8,7 +8,7 @@ Landing page multilingue italiano/tedesco/inglese per Michela Massage, attività
 
 - identità e posizionamento del brand;
 - trattamenti disponibili;
-- prezzi e note su riconoscimento ASCA/EMR;
+- prezzi, pacchetti, abbonamenti e note su riconoscimento ASCA/EMR;
 - informazioni pratiche su sede, disponibilità e contatti;
 - form di richiesta appuntamento tramite `mailto:`;
 - QR code per apertura rapida di una bozza email.

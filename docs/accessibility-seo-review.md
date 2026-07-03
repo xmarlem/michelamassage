@@ -19,7 +19,7 @@ Il sito è visivamente coerente e adatto a una landing page premium/wellness. La
 
 ### 1. Prezzi non allineati
 
-Le card principali, la tabella `#prezzi` e le option del form sono state allineate per massaggio classico, linfodrenaggio, testa/collo, massaggio prenatale e RESET. La nota prezzi include anche i pacchetti gravidanza.
+Le card principali, la tabella `#prezzi` e le option del form sono state allineate per massaggio classico, linfodrenaggio, testa/collo, massaggio prenatale e RESET. La sezione prezzi include anche un pannello dedicato a pacchetti gravidanza e abbonamenti da 10 sedute.
 
 ### 2. Link telefono non valido
 

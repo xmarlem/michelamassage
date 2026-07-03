@@ -34,7 +34,7 @@ Controllare e allineare sempre:
 - option del select nel form contatto;
 - testo della mail se il trattamento o la durata cambia.
 
-I prezzi sono duplicati in card, tabella prezzi e option del form. Quando cambia un prezzo, aggiornare sempre tutte le occorrenze e verificare anche i pacchetti gravidanza nella nota prezzi.
+I prezzi sono duplicati in card, tabella prezzi, pannello pacchetti/abbonamenti e option del form. Quando cambia un prezzo, aggiornare sempre tutte le occorrenze e verificare anche pacchetti gravidanza e abbonamenti da 10 sedute.
 
 ## Aggiungere un servizio
 
