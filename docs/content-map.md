@@ -42,6 +42,7 @@ Contenuti chiave:
 - trattamenti personalizzati in ambiente sereno;
 - obiettivi: rilassamento, riduzione tensioni/dolori, equilibrio naturale;
 - formazione riconosciuta ASCA/EMR e possibile copertura da assicurazioni complementari.
+- ritratto professionale in `assets/images/michela-portrait.png`, posizionato nella card certificazioni per rendere la sezione più personale senza appesantire la hero.
 
 Certificazioni/card:
 

@@ -65,9 +65,10 @@ Nota: il link `tel:` attuale è mascherato come `tel:+417****5061`, mentre il te
 ## Modificare immagini
 
 - Logo: sostituire `logo.png`, mantenendo nome e proporzioni simili.
+- Ritratto Michela: sostituire `assets/images/michela-portrait.png`, mantenendo PNG con sfondo trasparente e inquadratura verticale.
 - Sfondo atmosferico: sostituire `atmo-bg.jpg`.
 - Hero: URL remoto Unsplash dentro `.hero-bg-img` nel CSS.
-- Gallerie/card: molte immagini sono data URI base64 dentro `index.html`; per manutenzione migliore conviene estrarle in file separati, ad esempio `assets/`, e usare path relativi.
+- Gallerie/card: immagini in `assets/images/` referenziate da `index.html` e CSS.
 
 ## Test manuale dopo modifiche
 
