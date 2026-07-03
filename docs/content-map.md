@@ -57,16 +57,22 @@ Certificazioni/card:
 | Massaggio Classico | Klassische Massage | 30 MIN: CHF 70 |
 | Linfodrenaggio | Lymphdrainage | 30 MIN: CHF 80 |
 | Massaggio Testa &amp; Collo | Kopf- &amp; Nackenmassage | 30 MIN: CHF 75 |
-| Massaggio Prenatale | Schwangerschaftsmassage | 30 MIN: — CHF |
+| Massaggio Prenatale | Schwangerschaftsmassage | 30 MIN: CHF 75 |
 | RESET — Spegni lo stress, attiva il corpo | RESET — Stress ausschalten, Körper aktivieren | 90 MIN: CHF 150 |
 
 Nota: il servizio `RESET` è indicato come solo per nuovi clienti.
 
 ## Prezzi
 
-La sezione prezzi contiene una tabella separata dalle card servizio. Al momento diverse celle della tabella mostrano placeholder `— CHF`, mentre le card servizio hanno prezzi completi per massaggio classico, linfodrenaggio, testa/collo e RESET.
+La sezione prezzi contiene una tabella separata dalle card servizio. Card, tabella prezzi e option del form sono allineate per massaggio classico, linfodrenaggio, testa/collo, massaggio prenatale e RESET.
 
-Questa discrepanza va gestita prima della pubblicazione: scegliere una sola fonte di verità e allineare card, tabella prezzi e option del form.
+Pacchetti gravidanza indicati nella nota prezzi:
+
+| Pacchetto | Durata | Prezzo | Validità |
+| --- | --- | --- | --- |
+| Relax | 3 × 60 min | CHF 345 | 3 mesi |
+| Balance | 5 × 60 min | CHF 575 | 6 mesi |
+| Deep Relax | 3 × 90 min | CHF 460 | 4 mesi |
 
 ## Info pratiche
 

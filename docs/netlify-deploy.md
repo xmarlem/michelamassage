@@ -176,9 +176,9 @@ Usare `make final-check` prima di chiudere una sessione o un task che ha modific
 
 ## Checklist prima di andare online
 
-- [ ] Verificare che i prezzi del massaggio prenatale siano corretti o lasciati volutamente come `— CHF`.
+- [ ] Verificare che i prezzi del massaggio prenatale e dei pacchetti gravidanza siano ancora corretti.
 - [ ] Verificare che il numero telefono e l'email siano definitivi.
 - [ ] Testare il form su mobile: deve aprire l'app email.
-- [ ] Testare il QR code in tedesco e italiano.
+- [ ] Testare il QR code in tedesco, italiano e inglese.
 - [ ] Eseguire Lighthouse da Chrome DevTools su mobile e desktop.
 - [ ] Se vuoi massima privacy/performance, scaricare e servire localmente anche Google Fonts, QRCode.js e immagine hero Unsplash.

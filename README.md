@@ -243,6 +243,6 @@ Important docs:
 
 Before production/business review, confirm:
 
-- whether prenatal massage prices should remain `— CHF` or be filled in;
+- whether prenatal massage prices and pregnancy package prices are still current;
 - whether all phone/email details are final;
 - whether Google Fonts, QRCode.js, and the remote Unsplash hero image should be self-hosted for stronger privacy/performance.

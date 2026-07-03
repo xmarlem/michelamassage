@@ -34,7 +34,7 @@ Controllare e allineare sempre:
 - option del select nel form contatto;
 - testo della mail se il trattamento o la durata cambia.
 
-Attualmente la tabella `#prezzi` contiene vari placeholder `— CHF`, mentre le card servizio contengono prezzi espliciti. Prima della messa online è consigliato allineare la tabella.
+I prezzi sono duplicati in card, tabella prezzi e option del form. Quando cambia un prezzo, aggiornare sempre tutte le occorrenze e verificare anche i pacchetti gravidanza nella nota prezzi.
 
 ## Aggiungere un servizio
 
