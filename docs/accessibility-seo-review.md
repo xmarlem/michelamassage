@@ -13,7 +13,7 @@ Il sito è visivamente coerente e adatto a una landing page premium/wellness. La
 - Navigazione ad anchor semplice.
 - Brand visuale coerente: navy, oro, font eleganti, immagini atmosferiche.
 - CTA chiara verso contatto/prenotazione.
-- Supporto bilingue IT/DE implementato senza framework.
+- Supporto multilingue IT/DE/EN implementato senza framework.
 
 ## Rischi e problemi rilevati
 

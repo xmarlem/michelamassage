@@ -4,7 +4,7 @@ Questa cartella documenta il sito statico contenuto in `index.html`.
 
 ## Scopo del sito
 
-Landing page bilingue italiano/tedesco per Michela Massage, attività di massaggi e linfodrenaggio a Zürich. Il sito presenta:
+Landing page multilingue italiano/tedesco/inglese per Michela Massage, attività di massaggi e linfodrenaggio a Zürich. Il sito presenta:
 
 - identità e posizionamento del brand;
 - trattamenti disponibili;

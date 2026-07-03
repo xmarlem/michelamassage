@@ -6,7 +6,7 @@ Il sito è una single page statica riorganizzata per deploy semplice su Netlify:
 
 - `index.html` contiene il markup delle sezioni;
 - `assets/css/styles.css` contiene lo stile visuale;
-- `assets/js/main.js` contiene cambio lingua IT/DE, animazioni scroll/reveal, generazione QR code e gestione form `mailto:`;
+- `assets/js/main.js` contiene cambio lingua IT/DE/EN, animazioni scroll/reveal, generazione QR code e gestione form `mailto:`;
 - `assets/images/` contiene immagini e logo;
 - `netlify.toml` contiene impostazioni di deploy, cache e security headers.
 
@@ -34,6 +34,7 @@ Ordine principale del documento:
    - info band;
    - gallery;
    - contatti/form/QR;
+   - FAQ;
    - footer;
    - JavaScript esterno `assets/js/main.js`.
 
@@ -47,6 +48,7 @@ Ordine principale del documento:
 | `#prezzi` | Tabella prezzi e note ASCA/EMR. |
 | `#info` | Posizione, disponibilità e telefono. |
 | `#contatti` | Contatti, QR code e form mailto. |
+| `#faq` | Domande frequenti multilingue. |
 
 ## CSS
 
@@ -76,8 +78,8 @@ Funzioni principali:
 
 | Funzione | Responsabilità |
 | --- | --- |
-| `buildQR(l)` | Rigenera il QR code con URL `mailto:` italiano o tedesco. |
-| `setLang(l)` | Cambia lingua, aggiorna `html.lang`, testi `data-i/data-d`, placeholder, option select e bottone attivo. |
+| `buildQR(l)` | Rigenera il QR code con URL `mailto:` italiano, tedesco o inglese. |
+| `setLang(l)` | Cambia lingua, aggiorna `html.lang`, testi `data-i/data-d/data-e`, placeholder, option select e bottone attivo. |
 | scroll listener | Aggiunge/rimuove `nav.scrolled`. |
 | IntersectionObserver | Mostra gli elementi `.reveal` quando entrano nel viewport. |
 | `handleSubmit(e)` | Costruisce una mail precompilata e imposta `window.location.href` su `mailto:`. |

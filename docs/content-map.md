@@ -7,19 +7,20 @@ Lingua predefinita: tedesco (`lang = 'de'` e `<html lang="de">`).
 Il sito supporta:
 
 - italiano tramite attributi `data-i`;
-- tedesco tramite attributi `data-d`.
+- tedesco tramite attributi `data-d`;
+- inglese tramite attributi `data-e`.
 
-Il cambio lingua avviene lato client con `setLang('it')` / `setLang('de')`.
+Il cambio lingua avviene lato client con `setLang('it')`, `setLang('de')` e `setLang('en')`.
 
 ## Navigazione
 
-| Voce DE | Voce IT | Target |
-| --- | --- | --- |
-| Über mich | Chi sono | `#about` |
-| Behandlungen | Servizi | `#servizi` |
-| Preise | Prezzi | `#prezzi` |
-| FAQ | FAQ | `#faq` |
-| Kontakt | Contatti | `#contatti` |
+| Voce DE | Voce IT | Voce EN | Target |
+| --- | --- | --- | --- |
+| Über mich | Chi sono | About | `#about` |
+| Behandlungen | Servizi | Treatments | `#servizi` |
+| Preise | Prezzi | Prices | `#prezzi` |
+| FAQ | FAQ | FAQ | `#faq` |
+| Kontakt | Contatti | Contact | `#contatti` |
 
 ## Hero
 
@@ -95,7 +96,8 @@ Il submit non invia dati a un server. Genera un link `mailto:` con subject e bod
 Il QR code punta a una bozza email `mailto:`:
 
 - `QR_DE`: subject `Terminanfrage Michela Massage`;
-- `QR_IT`: subject `Prenotazione Michela Massage`.
+- `QR_IT`: subject `Prenotazione Michela Massage`;
+- `QR_EN`: subject `Appointment request Michela Massage`.
 
 ## FAQ
 
