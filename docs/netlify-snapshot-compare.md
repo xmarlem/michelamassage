@@ -12,13 +12,19 @@ Lo snapshot non è un vero ambiente di preproduzione continuo. È solo una copia
 | Scopo | Progetto Netlify | URL |
 | --- | --- | --- |
 | Produzione | `michelamassage` | `https://michelamassage.netlify.app` |
-| Snapshot precedente | `michelamassage-previous` | `https://michelamassage-previous.netlify.app` |
+| Snapshot precedente | `michelamassage-old` | `https://michelamassage-old.netlify.app` |
 
-Se `michelamassage-previous` non fosse disponibile, usare un nome simile, ad esempio:
+Il progetto snapshot esiste già su Netlify:
+
+- Project name: `michelamassage-old`
+- Project ID: `c8ab4977-964e-4404-a941-e79cd95aeabc`
+- Site URL: `https://michelamassage-old.netlify.app`
+
+Se `michelamassage-old` non fosse disponibile in futuro, usare un nome simile, ad esempio:
 
 - `michelamassage-snapshot`
 - `michelamassage-before-update`
-- `michelamassage-previous-2026`
+- `michelamassage-old-2026`
 
 ## Quando usare questa procedura
 
@@ -59,19 +65,34 @@ Se non sei autenticato:
 netlify login
 ```
 
-## 1. Creare il progetto Netlify snapshot
+## 1. Verificare il progetto Netlify snapshot
 
-Questo passaggio si fa solo la prima volta.
+Il progetto `michelamassage-old` esiste già, quindi normalmente non va creato.
+
+Per verificarlo:
 
 ```bash
-netlify sites:create --name michelamassage-previous
+netlify sites:list
+```
+
+Nell'elenco deve comparire:
+
+```text
+michelamassage-old - c8ab4977-964e-4404-a941-e79cd95aeabc
+  url:  https://michelamassage-old.netlify.app
+```
+
+Se in futuro il progetto non esistesse più, ricrearlo con:
+
+```bash
+netlify sites:create --name michelamassage-old
 ```
 
 In alternativa, puoi crearlo dalla dashboard Netlify:
 
 1. apri Netlify;
 2. crea un nuovo sito/progetto;
-3. usa il nome `michelamassage-previous`;
+3. usa il nome `michelamassage-old`;
 4. non serve collegarlo a Git se il deploy resta manuale.
 
 ## 2. Eseguire i controlli locali
@@ -127,14 +148,14 @@ netlify deploy \
   --prod \
   --no-build \
   --dir "$SNAPSHOT_DIR" \
-  --site michelamassage-previous \
+  --site michelamassage-old \
   --message "Snapshot before production update"
 ```
 
 Alla fine Netlify mostrerà l'URL dello snapshot, ad esempio:
 
 ```text
-https://michelamassage-previous.netlify.app
+https://michelamassage-old.netlify.app
 ```
 
 Aprire l'URL e verificare che mostri ancora la versione precedente del sito.
@@ -170,7 +191,7 @@ netlify deploy \
 
 Aprire i due siti affiancati:
 
-- snapshot precedente: `https://michelamassage-previous.netlify.app`
+- snapshot precedente: `https://michelamassage-old.netlify.app`
 - produzione nuova: `https://michelamassage.netlify.app`
 
 Controllare almeno:
@@ -223,7 +244,7 @@ netlify deploy \
   --prod \
   --no-build \
   --dir "$SNAPSHOT_DIR" \
-  --site michelamassage-previous \
+  --site michelamassage-old \
   --message "Snapshot before production update"
 ```
 
@@ -237,7 +258,7 @@ make deploy-prod
 URL da confrontare:
 
 ```text
-Snapshot precedente: https://michelamassage-previous.netlify.app
+Snapshot precedente: https://michelamassage-old.netlify.app
 Produzione nuova:   https://michelamassage.netlify.app
 ```
 
