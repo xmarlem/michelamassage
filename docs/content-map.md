@@ -28,8 +28,9 @@ Messaggio principale:
 
 - Michela Massage;
 - Berufsmasseurin & Lymphdrainage-Therapeutin;
-- Zürich;
+- Oerlikon, Zürich;
 - riconoscimento ASCA/EMR;
+- spazio per rallentare, ascoltare il corpo e ritrovare equilibrio;
 - disponibilità ogni martedì, su appuntamento.
 
 CTA principale: prenotazione appuntamento verso `#contatti`.
@@ -38,9 +39,10 @@ CTA principale: prenotazione appuntamento verso `#contatti`.
 
 Contenuti chiave:
 
-- Michela è massaggiatrice professionale e terapeuta di linfodrenaggio a Zürich;
-- trattamenti personalizzati in ambiente sereno;
-- obiettivi: rilassamento, riduzione tensioni/dolori, equilibrio naturale;
+- Michela è massaggiatrice professionale e terapeuta di linfodrenaggio a Oerlikon, Zürich;
+- trattamenti personalizzati in ambiente sereno, dove il tempo dedicato alla persona diventa cura;
+- ogni trattamento parte da come la persona arriva quel giorno, da ciò che il corpo racconta e dal bisogno del momento;
+- obiettivi: rallentare, ascoltare il corpo, ridurre tensioni/dolori, ritrovare energia, presenza ed equilibrio naturale;
 - formazione riconosciuta ASCA/EMR e possibile copertura da assicurazioni complementari.
 - ritratto professionale in `assets/images/michela-portrait.png`, posizionato nella card certificazioni per rendere la sezione più personale senza appesantire la hero.
 
@@ -56,7 +58,7 @@ Certificazioni/card:
 | Servizio IT | Servizio DE | Prezzi nella card |
 | --- | --- | --- |
 | Massaggio Classico | Klassische Massage | 30 MIN: CHF 70 |
-| Linfodrenaggio | Lymphdrainage | 30 MIN: CHF 80 |
+| Linfodrenaggio | Lymphdrainage | 30 MIN: CHF 80; descritto come strumento adattato alle esigenze della persona quando indicato |
 | Massaggio Testa &amp; Collo | Kopf- &amp; Nackenmassage | 30 MIN: CHF 75 |
 | Massaggio Prenatale | Schwangerschaftsmassage | 30 MIN: CHF 75 |
 | RESET — Spegni lo stress, attiva il corpo | RESET — Stress ausschalten, Körper aktivieren | 90 MIN: CHF 150 |
