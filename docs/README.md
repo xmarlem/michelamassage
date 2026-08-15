@@ -51,6 +51,8 @@ Landing page multilingue italiano/tedesco/inglese per Michela Massage, attività
 - `development-workflow.excalidraw` — diagramma editabile del workflow di sviluppo Hermes/AI.
 - `session-log.md` — riepilogo conciso dell'ultima sessione di lavoro.
 - `current-task.md` — prossimo passo operativo consigliato.
+- `analysis/competitor-comparison-zenathome-2026-08-15.md` — confronto aggiornato in inglese tra Michela Massage e ZenAtHome.
+- `analysis/competitor-comparison-zenathome-2026-08-15.it.md` — versione italiana del confronto con ZenAtHome.
 
 ## Avvio locale
 

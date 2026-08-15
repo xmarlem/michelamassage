@@ -328,3 +328,4 @@ Mantenere Michela Massage tecnicamente semplice e visivamente raffinato. Non tra
 7. informazioni pratiche/legali più complete.
 
 Questi cambiamenti renderebbero il sito più professionale e più pronto alla conversione, preservando l’attuale architettura statica leggera.
+
