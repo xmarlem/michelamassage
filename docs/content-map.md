@@ -89,7 +89,7 @@ Abbonamenti da 10 sedute indicati nel pannello pacchetti e nel form contatto:
 
 | Campo | Valore |
 | --- | --- |
-| Posizione | Tramstrasse 10, 8050 Zürich |
+| Posizione | Hagenholzstrasse 104B, 8050 Zürich |
 | Disponibilità | Ogni martedì / Jeden Dienstag |
 | Modalità | Solo su appuntamento / Nach Vereinbarung |
 | Telefono/WhatsApp | +41 78 608 50 61 |
