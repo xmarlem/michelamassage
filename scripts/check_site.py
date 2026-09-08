@@ -4,10 +4,12 @@ import json
 import re
 import sys
 import tomllib
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+CANONICAL_URL = "https://michelamassage.ch/"
 
 
 class SiteParser(HTMLParser):
@@ -146,9 +148,10 @@ def check_validate():
     ok = True
 
     try:
-        tomllib.loads((ROOT / "netlify.toml").read_text(encoding="utf-8"))
+        netlify_config = tomllib.loads((ROOT / "netlify.toml").read_text(encoding="utf-8"))
     except Exception as exc:
         ok = fail(f"netlify.toml parse error: {exc}")
+        netlify_config = {}
 
     for block in parser.jsonld_blocks:
         try:
@@ -160,6 +163,48 @@ def check_validate():
         ok = fail("Missing meta description")
     if not re.search(r'<meta property="og:title"', html):
         ok = fail("Missing og:title")
+
+    canonical_links = [
+        link for link in parser.links
+        if link.get("rel") == "canonical" and link.get("href") == CANONICAL_URL
+    ]
+    if len(canonical_links) != 1:
+        ok = fail(f"Expected one canonical link to {CANONICAL_URL}")
+    if f'<meta property="og:url" content="{CANONICAL_URL}">' not in html:
+        ok = fail(f"Missing og:url for {CANONICAL_URL}")
+
+    robots_path = ROOT / "robots.txt"
+    if not robots_path.exists():
+        ok = fail("robots.txt not found")
+    else:
+        robots = robots_path.read_text(encoding="utf-8")
+        if "User-agent: *" not in robots or "Allow: /" not in robots:
+            ok = fail("robots.txt must allow public crawling")
+        if f"Sitemap: {CANONICAL_URL}sitemap.xml" not in robots:
+            ok = fail("robots.txt does not reference the canonical sitemap")
+
+    sitemap_path = ROOT / "sitemap.xml"
+    if not sitemap_path.exists():
+        ok = fail("sitemap.xml not found")
+    else:
+        try:
+            sitemap_root = ET.parse(sitemap_path).getroot()
+            namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+            sitemap_urls = [element.text for element in sitemap_root.findall("sm:url/sm:loc", namespace)]
+            if sitemap_urls != [CANONICAL_URL]:
+                ok = fail(f"Unexpected sitemap URLs: {sitemap_urls}")
+        except Exception as exc:
+            ok = fail(f"sitemap.xml parse error: {exc}")
+
+    redirects = netlify_config.get("redirects", [])
+    expected_redirects = {
+        "https://michelamassage.netlify.app/*": "https://michelamassage.ch/:splat",
+        "https://www.michelamassage.ch/*": "https://michelamassage.ch/:splat",
+    }
+    actual_redirects = {redirect.get("from"): redirect.get("to") for redirect in redirects}
+    for source, destination in expected_redirects.items():
+        if actual_redirects.get(source) != destination:
+            ok = fail(f"Missing canonical-domain redirect: {source} -> {destination}")
 
     return ok
 

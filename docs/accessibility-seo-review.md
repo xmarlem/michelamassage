@@ -65,17 +65,26 @@ Dopo `window.location.href = mailto:...`, il messaggio chiarisce che si aprirà 
 
 ### Presente
 
-- `<title>` descrittivo: `Michela Massage – Zürich`.
+- `<title>` descrittivo: `Michela Massage – Oerlikon Zürich`.
 - Meta description utile in tedesco.
 - Un solo `<h1>`.
 - Sezioni con heading coerenti.
+- Canonical autoreferenziale su `https://michelamassage.ch/`.
+- Open Graph con URL e immagine assoluti.
+- JSON-LD `HealthAndBeautyBusiness` con URL e immagine canonici.
+- `robots.txt` pubblico con riferimento alla sitemap.
+- `sitemap.xml` con la homepage canonica.
+- Redirect Netlify e `www` verso il dominio canonico.
 
 ### Miglioramenti consigliati
 
-- Aggiungere meta description anche italiana non è direttamente possibile nello stesso meta standard; valutare landing separate o `hreflang` se si creano URL dedicati.
-- Aggiungere dati strutturati JSON-LD per LocalBusiness/HealthAndBeautyBusiness.
-- Aggiungere Open Graph/Twitter Card per condivisione social.
+- Creare pagine statiche localizzate con URL dedicati prima di aggiungere `hreflang`; il cambio lingua JavaScript su un solo URL non offre documenti indicizzabili separati.
+- Verificare la proprietà in Google Search Console, ispezionare la homepage e inviare la sitemap dopo il deploy.
+- Verificare e completare Google Business Profile con dati coerenti con sito e JSON-LD.
+- Creare poche pagine servizio tedesche sostanziali prima di espandere le traduzioni.
 - Migliorare `alt` delle immagini decorative/servizio. Molte immagini base64 non hanno descrizioni specifiche.
+
+La roadmap completa è in `docs/seo-positioning-plan.md`.
 
 ## Performance
 

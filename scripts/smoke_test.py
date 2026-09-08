@@ -53,6 +53,8 @@ def main():
             "/assets/js/main.js": "text/javascript",
             "/assets/images/logo.png": "image/png",
             "/assets/images/inline-01.jpg": "image/jpeg",
+            "/robots.txt": "text/plain",
+            "/sitemap.xml": "application/xml",
         }
 
         for path, content_type in expected.items():

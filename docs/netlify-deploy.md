@@ -7,6 +7,8 @@ Il sito è configurato per essere deployato su Netlify senza build step.
 ```text
 .
 ├── index.html
+├── robots.txt
+├── sitemap.xml
 ├── netlify.toml
 ├── assets/
 │   ├── css/styles.css
@@ -31,6 +33,7 @@ Il file `netlify.toml` imposta già:
 - publish directory su `.`;
 - nessun comando di build;
 - security headers base;
+- redirect permanenti da `michelamassage.netlify.app` e `www.michelamassage.ch` al dominio canonico `https://michelamassage.ch/`;
 - cache lunga per `/assets/*`;
 - revalidation per `index.html`.
 
@@ -117,8 +120,10 @@ Quando Netlify chiede la directory da pubblicare, usare:
 Dopo il deploy produzione, il sito sarà disponibile su:
 
 ```text
-https://michelamassage.netlify.app
+https://michelamassage.ch/
 ```
+
+Il sottodominio Netlify rimane l'host tecnico del progetto, ma deve rispondere con redirect permanente verso il dominio canonico.
 
 ## Cosa è stato migliorato per il deploy
 
@@ -144,6 +149,9 @@ https://michelamassage.netlify.app
 - Tabella prezzi allineata ai prezzi delle card principali.
 - Meta Open Graph base.
 - JSON-LD `HealthAndBeautyBusiness`.
+- Canonical, `og:url` e immagine Open Graph assoluta sul dominio `.ch`.
+- `robots.txt` e `sitemap.xml` verificati dai controlli automatici.
+- Redirect degli host alternativi verso il dominio canonico.
 
 
 ## Development workflow con Makefile

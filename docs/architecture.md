@@ -8,7 +8,8 @@ Il sito è una single page statica riorganizzata per deploy semplice su Netlify:
 - `assets/css/styles.css` contiene lo stile visuale;
 - `assets/js/main.js` contiene cambio lingua IT/DE/EN, animazioni scroll/reveal, generazione QR code e gestione form `mailto:`;
 - `assets/images/` contiene immagini e logo;
-- `netlify.toml` contiene impostazioni di deploy, cache e security headers.
+- `robots.txt` e `sitemap.xml` descrivono la superficie pubblica indicizzabile;
+- `netlify.toml` contiene impostazioni di deploy, redirect canonici, cache e security headers.
 
 Non esiste backend: l'invio messaggio non salva dati e non chiama API server-side.
 
@@ -17,7 +18,7 @@ Non esiste backend: l'invio messaggio non salva dati e non chiama API server-sid
 Ordine principale del documento:
 
 1. `head`
-   - metadata base;
+   - metadata base, canonical e Open Graph;
    - meta description in tedesco;
    - Google Fonts;
    - QRCode.js da CDN;
@@ -98,3 +99,16 @@ Funzioni principali:
 - `atmo-bg.jpg`: sfondo locale per blocco atmosferico.
 
 Le immagini decorative precedentemente inline sono state estratte in `assets/images/inline-*.jpg`. Questo riduce la dimensione di `index.html`, migliora caching e manutenzione.
+
+## SEO tecnica e dominio canonico
+
+Il dominio pubblico canonico è `https://michelamassage.ch/`.
+
+- `index.html` usa un canonical autoreferenziale e URL Open Graph assoluti.
+- Il JSON-LD `HealthAndBeautyBusiness` contiene URL e immagine canonici.
+- `robots.txt` permette il crawling pubblico e indica `sitemap.xml`.
+- `sitemap.xml` contiene solo URL canonici e indicizzabili.
+- Netlify reindirizza permanentemente il sottodominio `michelamassage.netlify.app` e l'host `www` al dominio canonico.
+- `scripts/check_site.py` verifica che questi elementi restino coerenti.
+
+Quando verranno aggiunte pagine servizio o varianti linguistiche con URL dedicati, ogni URL canonico dovrà essere aggiunto alla sitemap e validato dai controlli del progetto.

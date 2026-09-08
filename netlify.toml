@@ -2,6 +2,18 @@
   publish = "."
   command = ""
 
+[[redirects]]
+  from = "https://michelamassage.netlify.app/*"
+  to = "https://michelamassage.ch/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.michelamassage.ch/*"
+  to = "https://michelamassage.ch/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

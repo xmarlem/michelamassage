@@ -19,6 +19,8 @@ Landing page multilingue italiano/tedesco/inglese per Michela Massage, attività
 | --- | --- |
 | `README.md` | Guida principale per sviluppo, verifiche e deploy. |
 | `index.html` | Markup principale della single page. |
+| `robots.txt` | Regole pubbliche di crawling e riferimento alla sitemap canonica. |
+| `sitemap.xml` | Elenco degli URL canonici indicizzabili. |
 | `assets/css/styles.css` | Stili del sito. |
 | `assets/js/main.js` | Logica cambio lingua, QR code, reveal animation e form mailto. |
 | `assets/images/` | Logo, sfondo e immagini decorative/servizi. |
@@ -46,6 +48,7 @@ Landing page multilingue italiano/tedesco/inglese per Michela Massage, attività
 - `content-map.md` — mappa sezioni, testi, servizi e contatti.
 - `maintenance.md` — come modificare testi, prezzi, lingua, immagini e contatti.
 - `accessibility-seo-review.md` — analisi SEO/accessibilità/performance con rischi e miglioramenti.
+- `seo-positioning-plan.md` — piano prioritizzato per SEO tecnica, locale, contenuti, conversione e misurazione.
 - `netlify-deploy.md` — istruzioni e checklist per deploy Netlify.
 - `netlify-snapshot-compare.md` — procedura per mantenere online uno snapshot precedente e confrontarlo visivamente dopo il deploy.
 - `development-workflow.excalidraw` — diagramma editabile del workflow di sviluppo Hermes/AI.
